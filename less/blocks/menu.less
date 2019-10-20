@@ -1,0 +1,42 @@
+.menu {
+  .reset();
+  list-style: none;
+  margin-top: 130px;
+}
+
+.menu__item {
+  position: relative;
+  .transition();
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    bottom: 0;
+    display: none;
+    width: 6px;
+    background-color: rgb(255, 188, 0);
+  }
+  
+  &--active {
+    pointer-events: none;
+    
+    &::before {
+      display: block;
+    }
+  }
+  
+  &:hover,
+  &:active {
+    color: rgb(255, 188, 0);
+    .transition();
+  }
+}
+
+.menu__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}

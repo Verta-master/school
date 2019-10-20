@@ -1,0 +1,40 @@
+.social {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.social__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: -20px;
+}
+
+.social__item {
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.social__link {
+  display: block;
+  
+  svg {
+    display: block;
+    width: 17px;
+    height: 17px;
+    fill: #fff;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    svg {
+      fill: rgb(255, 188, 0);
+      .transition();
+    }
+  }
+}
