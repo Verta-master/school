@@ -345,27 +345,44 @@
     </section>
     
     <section class="contacts" id="contacts">
-      
+      <div class="contacts__map">
+        <iframe src="https://yandex.com/map-widget/v1/-/CGDvyJ9B"></iframe>
+      </div>
+      <div class="contacts__info">
+        <p class="contacts__title">StarSkill</p>
+        <address>Бизнес центр «SkyLight»<br>Ленинградский проспект 39, стр. 79</address>
+        <div class="contacts__transport">
+          <p>Метро:</p>
+          <ul class="contacts__list contacts__list--green">
+            <li>Аэропорт</li>
+          </ul>
+        </div>
+        <div class="contacts__transport">
+          <p></p>
+          <ul class="contacts__list contacts__list--blue">
+            <li>6</li>
+            <li>12</li>
+            <li>43</li>
+            <li>65</li>
+            <li>70</li>
+            <li>82</li>
+          </ul>
+        </div>
+        <div class="contacts__transport">
+          <p>Автобусы:</p>
+          <ul class="contacts__list contacts__list--yellow">
+            <li>105</li>
+            <li>412</li>
+            <li>M1</li>
+            <li>H1</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
-  
-  <script>
-  $( document ).ready(function() {
-    var $container = $('.isotope');
-    $('.filter-button-group .course__btn').click(function(){
-		  var $this = $(this);
-      if ( !$this.hasClass('is-checked') ) {
-        $this.parents('#options').find('.is-checked').removeClass('is-checked');
-        $this.addClass('is-checked');
-      }
-      var selector = $this.attr('data-filter');
-      $container.isotope({  itemSelector: '.course__item', filter: selector });
-      return false;
-    });
-  });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
