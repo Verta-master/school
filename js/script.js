@@ -11,6 +11,18 @@ $(document).ready(function() {
     $container.isotope({  itemSelector: '.course__item', filter: selector });
     return false;
   });
+  
+  var $container2 = $('.isotope2');
+  $('.filter-button-group2 .course__btn').click(function(){
+    var $this = $(this);
+    if ( !$this.hasClass('is-checked') ) {
+      $this.parents('#options2').find('.is-checked').removeClass('is-checked');
+      $this.addClass('is-checked');
+    }
+    var selector = $this.attr('data-filter');
+    $container2.isotope({  itemSelector: '.course__item', filter: selector });
+    return false;
+  });
 });
 
 //Scroll to menu anchor
