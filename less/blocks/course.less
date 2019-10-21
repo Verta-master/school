@@ -14,6 +14,7 @@
 .course__list {
   align-items: stretch;
   margin-right: -30px;
+  margin-top: 35px;
 }
 
 .course__btn {
@@ -46,6 +47,12 @@
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: #fff;
+  .transition();
+  
+  &:hover {
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.05);
+    .transition();
+  }
 }
 
 .course__link {
@@ -73,9 +80,15 @@
   }
 }
 
-.course--blog .course__img {
-  height: 165px;
-  margin-top: auto;
+.course--blog {
+  .course__img {
+    height: 165px;
+    margin-top: auto;
+  }
+  
+  .course__info {
+    padding-bottom: 0;
+  }
 }
 
 .course__info {
@@ -96,7 +109,7 @@
   
   span {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #5ec5a2;
   }
   
@@ -115,7 +128,7 @@
 
 .course__title {
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.33;
 }
 
 .course__time {
