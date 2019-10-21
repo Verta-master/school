@@ -25,3 +25,44 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 1022px) {
+  .sidebar {
+    display: none;
+  }
+  main {
+    padding-left: 0;
+  }
+  .about__banner {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 766px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .about__title,
+  .about__subtitle {
+    font-size: 24px;
+  }
+  .contacts__info {
+    position: static;
+    width: 100%;
+    transform: none;
+  }
+  .contacts__map {
+    min-height: auto;
+  } 
+  .contacts__map iframe {
+    min-height: 400px;
+  }
+  .course__list {
+    justify-content: space-around;
+  }
+}
